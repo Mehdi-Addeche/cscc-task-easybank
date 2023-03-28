@@ -1,0 +1,268 @@
+
+
+*{
+  padding:0; 
+  margin:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Public Sans', sans-serif;
+  font-size: 25%;
+}
+
+body{
+  font-size: 18px;
+  color:var(--Dark-Blue);
+  position: relative;
+}
+
+p{
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+
+}
+
+.header{
+  display: flex;
+  padding: 0 10%;
+  background-color:var(--White);
+  align-items: center;
+  z-index: 4;
+  position: relative;
+}
+
+.navbar-background{
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-links a{
+  display: inline-block;
+  color: var(--Grayish-Blue);
+  background-size: 0 0;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 30px 0;
+  margin-right: 20px;
+  transition: background-size 0.3s ;
+}
+
+.navbar-links a:hover{
+  color: var(--Dark-Blue);
+  background-image: linear-gradient(to right, #31d35c 0%, #2bb7da 100%);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  padding: 10px;
+}
+
+.request-invite{
+  padding: 8px 22px;
+  font-size: 4rem;
+  border-radius: 9rem;
+  border:none;
+  background: linear-gradient(to right, #31d35c 0%, #2bb7da 100%);
+  color:var(--White);
+}
+
+.menu-button, .close-button{
+  display: none;
+}
+
+.section1{
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: var(--Very-Light-Gray);
+  padding-left: 10%;
+  height: 680px;
+}
+
+.section1-content{
+  width: 450px;
+
+}
+.section1-content h1{
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.section1-content p{
+  margin: 40px 0 40px 0
+}
+
+.section1-img1{
+  background-image: url("images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -40px -260px;
+  top: 0;
+  height: 680px;
+  width: 760px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.section1-img2{
+  background-image: url(images/image-mockups.png);
+  background-repeat: no-repeat;
+  width: 650px;
+  height: 800px;
+  right: 0px;
+  background-position: 140px -85px;
+  top: 0px;
+  position: absolute;
+  z-index: 3;
+}
+
+.section2{
+  padding: 92px 10% 80px 10%;
+  background-color: var(--Light-Grayish-Blue);
+}
+
+h2{
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.section2 > p{
+  display: inline-block;
+  margin: 40px 0 40px 0;
+}
+
+.section2 .bank-features{
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.feature{
+  max-width: 296px;
+}
+.feature:not(:last-child){
+  margin-right: 32px;
+}
+.feature h3{
+  font-weight: 400;
+  font-size: 24px;
+  margin: 40px 0 40px 0;
+}
+.section1-image2 img{
+  object-position: 140px -112px;
+}
+
+.section3{
+  padding: 100px 10% 80px 10%;
+  background-color: var(--Very-Light-Gray);
+}
+
+.section3 .Articles{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.Article{
+  max-width: 295px;
+  background-color: var(--White);
+  border-radius: 10px;
+}
+.Article:not(:last-child){
+  margin-right: 33px;
+}
+
+.Article img{
+  width: 100%;
+  height: 215px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+}
+
+.article-content{
+  padding: 25px 25px;
+}
+
+.author{
+  font-size: 12px;
+}
+
+.article-content h3{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0;
+}
+.article-intro{
+  font-size: 20px;
+}
+footer{
+  background-color: var(--Dark-Blue);
+  display: flex;
+  padding: 60px 10%
+}
+.footer-logo{
+  position: relative;
+}
+.footer-logo h4{
+  position:absolute;
+  left: 20px;
+  top: -5px;
+  color:var(--White);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.socialnet-group{
+  margin-top: 60px;
+}
+
+.socialnet-group img{
+  margin-right: 15px;
+}
+.socialnet-group img:hover{
+  transform: scale(1.1);
+}
+.footer-navbar1{
+  margin: 0 140px;
+}
+.footer-navbar1 p{
+  color:var(--White);
+  font-size: 18px;
+  width:fit-content;
+  margin-bottom: 14px;
+}
+
+.footer-navbar2{
+  flex-grow: 1;
+}
+.footer-navbar2 p{
+  color:var(--White);
+  font-size: 18px;
+  width:fit-content;
+  margin-bottom: 14px;
+}
+
+.footer-navbar1 p:hover, .footer-navbar2 p:hover{
+  color:var(--Lime-Green);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.Rights{
+  text-align: right;
+}
+.Rights p{
+  margin-top: 40px;
+  font-size: 17px;
+}
+
+:root {
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
